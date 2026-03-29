@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: Writing — Shivam Patel
+activeNav: writing
+---
+
+<div class="page-title">Writing</div>
+
+{% if collections.writing.length %}
+  <ul class="writing-list">
+    {% for post in collections.writing %}
+      <li class="writing-item">
+        <a href="{{ post.url }}">
+          <div class="writing-title">{{ post.data.title }}</div>
+          <div class="writing-date">{{ post.date | dateFilter }}</div>
+          {% if post.data.description %}
+            <div class="writing-desc">{{ post.data.description }}</div>
+          {% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="empty-state">Nothing here yet. Check back soon.</p>
+{% endif %}

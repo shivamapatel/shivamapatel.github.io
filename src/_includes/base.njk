@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title if title else "Shivam Patel" }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="nav-links">
+          <a href="/" class="{{ 'active' if activeNav == 'home' }}">Home</a>
+          <a href="/writing/" class="{{ 'active' if activeNav == 'writing' }}">Writing</a>
+        </div>
+      </nav>
+      <main class="content">
+        {{ content | safe }}
+      </main>
+    </div>
+  </body>
+</html>
