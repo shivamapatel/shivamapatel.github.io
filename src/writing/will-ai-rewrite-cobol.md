@@ -16,6 +16,8 @@ When I got to Stanford, I wanted to better understand why these transformations 
 
 ## Chesterton's Fence
 
+![Chesterton's Fence](https://sproutsschools.com/wp-content/uploads/2023/05/Intro-to-Chesterton.jpeg)
+
 G.K. Chesterton, an English writer during the 20th century, has a quote in one of his short stories that defines where we start: 
 
 > There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, "I don't see the use of this; let us clear it away." To which the more intelligent type of reformer will do well to answer: "If you don't see the use of it, I certainly won't let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it." 
