@@ -34,11 +34,15 @@ The CODASYL report that contained the first full version of COBOL says: *The COB
 
 ### COBOL everywhere you can't see
 
-COBOL's readability for business audiences played a role in its widespread adoption, as did a few other factors. First, because COBOL was a standardized language across hardware providers, applications written in COBOL were portable across machines, increasing their reach. Secondly, the government's involvement in the creation of COBOL helped fuel its adoption in federal, financial, and healthcare sectors. And thirdly, COBOL was optimized for batch processing transactions at scale, which mattered a lot in these aforementioned industries. COBOL was tightly coupled with IBM Z mainframes, leading to efficiency in handling massive batches of data faster than other languages. Beyond just efficiency, COBOL handles calculations with greater precision than most programming languages driven by how it prioritizes decimal arithmetic over floating-point. This precision matters when you are processing trillions of dollars in industries like insurance, banking, and healthcare.
+COBOL's readability for business audiences played a role in its widespread adoption, as did a few other factors. First, because COBOL was a standardized language across hardware providers, applications written in COBOL were portable across machines, increasing their reach. Secondly, the government's involvement in the creation of COBOL helped fuel its adoption in federal, financial, and healthcare sectors. And thirdly, COBOL was optimized for batch processing transactions at scale, which mattered a lot in these aforementioned industries. COBOL was tightly coupled with IBM Z mainframes, leading to efficiency in handling massive batches of data faster than other languages. 
+
+Beyond just efficiency, COBOL handles calculations with greater precision than most programming languages driven by prioritizing decimal arithmetic over floating-point. This precision matters when you are processing trillions of dollars in industries like insurance, banking, and healthcare.
 
 Fast forward to today, there is an astonishing estimate of 800 billion lines of COBOL in daily production use worldwide. Within financial services specifically, COBOL is estimated to power 95% of all ATM transactions and 80% of in-person credit card swipes. Tell me that isn't scale. 
 
 ## Challenges with COBOL Today
+
+![Green Screen](https://hunterstrainingassociates.com/images/ispf6_25.gif)
 
 ### English, the double-edged sword
 
