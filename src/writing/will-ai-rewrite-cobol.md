@@ -78,12 +78,7 @@ We were lucky to get in touch with younger COBOL programmers, both at one of the
 
 What we learned is that understanding the syntax of COBOL is not the hard part, but rather it is getting up to speed on existing COBOL systems without the guidance of the engineers who wrote it to begin with. Maintaining 40+ year old codebases with minimal documentation and limited confidence on the impact of changes can be taxing. And even more taxing when the standard tooling around modern programming languages (e.g., IDEs, debuggers, Git) don't exist with COBOL and mainframe development.
 
-## [What do banks do about this all...]
+## Whose Code Is It Anyway?
 
-[Either you are on a vendor core or you have your own]
-
-[If you have your own, the rip and replace is sitll hard. SIs have to comb through this pretty manually]
-
-[If you have vendor core, you are beholden to their upgrade cycles.]
-
-## [Opportunities for AI]
+![Core Banking Vendors](https://www.kansascityfed.org/images/Chart1-PSRB24-3.27.24.width-725.png)
+<br>Sources: American Bankers Association, Chilingerian and Schafer (2020), and Callahan & Associates
