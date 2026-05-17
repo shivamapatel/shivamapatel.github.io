@@ -52,4 +52,24 @@ Given COBOL's efficiency in batch processing at scale, many organizations did no
 
 > COBOL programs are excessively complex. My codebase has millions of insurance policies within it, some of which are completely defunct now from a business perspective. Yet nobody did the work of scrubbing them from the codebase, and now it is even harder for me to navigate our programs. 
 
+When they do need to make changes to COBOL programs, developers find it risky to do so. There is a perceived larger "blast radius" associated with any change, driven by COBOL's monolithic structure and minimal documentation. A COBOL developer at a financial services firm told us:
+
+> Before I add to a COBOL program, I spend 2-3 days manually mapping the data flows within my program to better understand the potential impact of my change. And even then, I do not always know the full impact.
+
 ### The kids are alright...or are they?
+
+It is well documented that COBOL engineers are retiring.
+
+Many of the younger engineers on COBOL systems we talked to felt stranded. Maintaining 40+ year old codebases with minimal documentation and limited confidence on the impact of changes can be taxing. 
+
+> The interface and current standard for building, testing, and managing COBOL applications fondly referred to as the "green screen" is highly complex and unintuitive. It requires memorizing extensive commands and is a major barrier for developers entering the mainframe space. 
+
+## [What do banks do about this all...]
+
+[Either you are on a vendor core or you have your own]
+
+[If you have your own, the rip and replace is sitll hard. SIs have to comb through this pretty manually]
+
+[If you have vendor core, you are beholden to their upgrade cycles.]
+
+## [Opportunities for AI]
