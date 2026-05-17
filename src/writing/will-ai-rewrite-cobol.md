@@ -6,13 +6,9 @@ description: Learnings from diving into core banking modernization
 
 ## Introduction
 
-My time at Capital One prior to business school acquainted me with legacy core banking infrastructure. "Core banking infrastructure" refers to the systems that power critical bank activities such as: 
-- Managing accounts and customers
-- Processing deposits 
-- Issuing all types of loans
-- Reporting for financial and regulatory use cases
+My time at Capital One prior to business school acquainted me with legacy core banking infrastructure. "Core banking infrastructure" refers to the systems that power critical bank activities such as: managing accounts and customers, processing deposits, issuing all types of loans, and reporting for financial and regulatory use cases.
 
-"Legacy" refers to the fact that many of these systems were originally written in COBOL, or &**CO**mmon **B**usiness-**O**riented **L**anguage, a programming language created in the 1950s. Engineers trained in COBOL are approaching retirement, and many universities no longer teach the language, creating a dearth of experts who understand core banking systems. Besides being written in an aging language, these core banking systems often operate in batch cycles and are monolithic. This poses challenges when banks want to integrate their cores with other modern pieces of technology, which are often cloud-based, modular, and operate in real-time. 
+"Legacy" refers to the fact that many of these systems were originally written in COBOL, or **CO**mmon **B**usiness-**O**riented **L**anguage, a programming language created in the 1950s. Engineers trained in COBOL are approaching retirement, and many universities no longer teach the language, creating a dearth of experts who understand core banking systems. Besides being written in an aging language, these core banking systems often operate in batch cycles and are monolithic. This poses challenges when banks want to integrate their cores with other modern pieces of technology, which are often cloud-based, modular, and operate in real-time. 
 
 It should be no surprise then that bank executives increasingly view legacy core banking systems as rate-limiters to innovation. Banks are spending significant resources to modernize these systems, yet see limited success. Geoff Hudson-Searle (former Citibank executive) estimates that 75% of all COBOL rewrite projects have resulted in failure. When they do succeed, they are expensive: Commonwealth Bank of Australia took 5 years and $750M to replace and modernize its core banking platform, requiring the help of Accenture and SAP. 
 
@@ -40,6 +36,20 @@ COBOL's readability by business audiences played a role in its widespread adopti
 
 Fast forward to today, there is an astonishing estimate of 800 billion lines of COBOL in daily production use worldwide. Within financial services specifically, COBOL is estimated to power 95% of all ATM transactions and 80% of in-person credit card swipes. Tell me that isn't scale. 
 
-## Challenges
+## Challenges with COBOL Today
 
-[To be continued]
+### English, the double-edged sword
+
+While COBOL's similarity to English was initially a positive for business users, developers find it challenging to write working code while adhering to the constraint of having it look like English. Many modern programming languages seek to increase abstraction, but COBOL's English-like syntax added surface complexity without reducing logical complexity. Additionally, developers do not see the need to invest in documentation given the language's resemblence to English. A developer we talked to summarized the challenge with this well: 
+
+> Documentation, if it exists, repeats what the code says since COBOL technically uses English style commands. Critically, however, there is no documentation that explains why a program behaves the way it does. There is no contextual documentation either on how a program relates to others.
+
+### "If it ain't broke, don't fix it"
+
+Given COBOL's efficiency in batch processing at scale, many organizations did not want to "rock the boat" and applications went largely untouched for 30+ years. One engineer noted that without investment in refactoring and documentation, the programs evolved into *complex, highly intertwined balls of yarn*. A few quotes from developers summarize this mentality well: 
+
+> These programs have been around longer than I have, and after decades of tiny changes -- ten, twenty, thirty, forty years -- they've grown massive. 
+
+> COBOL programs are excessively complex. My codebase has millions of insurance policies within it, some of which are completely defunct now from a business perspective. Yet nobody did the work of scrubbing them from the codebase, and now it is even harder for me to navigate our programs. 
+
+### The kids are alright...or are they?
