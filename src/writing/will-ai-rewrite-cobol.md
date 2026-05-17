@@ -81,4 +81,14 @@ What we learned is that understanding the syntax of COBOL is not the hard part, 
 ## Whose Code Is It Anyway?
 
 ![Core Banking Vendors](https://www.kansascityfed.org/images/Chart1-PSRB24-3.27.24.width-725.png)
-<br>Sources: American Bankers Association, Chilingerian and Schafer (2020), and Callahan & Associates
+<br> *Sources: American Bankers Association, Chilingerian and Schafer (2020), and Callahan & Associates*
+
+Turning our attention back to banks, the core banking system market is highly concentrated as seen in the chart above. The "Big Three" core providers: Fiserv, FIS, and Jack Henry have over 70% market share in banks, according to a 2022 American Bankers Association survey. Each of the Big Three has grown its footprint via M&A over the last three decades and evolved into a "one stop shop" for banks. Beyond core banking, they offer payment processing for merchants, card network services, and more. 
+
+As a result of the breadth and depth of what they offer, core banking systems are highly sticky. The same survey found that 61% of banks have been with their core provider for more than 10 years. Yet, almost half of banks running on the Big Three report being dissatisfied with their provider. The complaints include slow customer support, weak integration with third parties and modern software, and limited data maintenance. The Big Three are focused on modernizing their offerings and service: moving to the cloud, modernizing their COBOL codebases to offer quicker support, and more. Yet, because banks have limited other core options, these initiatives move on the vendor's timeline, not the bank's. 
+
+Another factor compounds a bank's inability to leave: control over source code. Some contracts stipulate that core providers retain sole ownership over the core banking system's source code, including modifications and enhancements. In such instances, a bank running on Fiserv, FIS, or Jack Henry isn't really maintaining a COBOL codebase themselves. It is renting one. 
+
+The ownership picture is not strictly Big Three vs. everyone else. It is contract by contract. A smaller cohort of banks, typically the largest, have either built their own core in-house or negotiated meaningful source code access with their provider. Another small group has adopted modern core providers such as Thought Machine (founded in 2014, backed by J.P. Morgan Chase), which runs cloud-native and in real-time. But the sheer majority of banks are reliant on the Big Three, renting their COBOL codebases. 
+
+Control over source code meaningfully impacts how a bank thinks about using AI to maintain and modernize its core. 
