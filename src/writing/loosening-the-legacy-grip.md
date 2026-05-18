@@ -53,11 +53,11 @@ COBOL's English-likeness was meant to make programs readable, but it added surfa
 
 Additionally, developers do not see the need to invest in documentation given the language's resemblance to English. Ironically, this lack of documentation has led to limited interpretability of COBOL programs today. A developer we talked to summarized this well:
 
-> Documentation, if it exists, repeats what the code says since COBOL technically uses English style commands. Critically, however, there is no documentation that explains why a program behaves the way it does. There is no contextual documentation either on how a program relates to others which makes working in COBOL codebases challenging today.
+> Documentation, if it exists, repeats what the code says since COBOL technically uses English style commands. Critically, however, there is no documentation that explains why a program behaves the way it does, in other words, the business logic. There is no contextual documentation either on how a program relates to others which makes working in COBOL codebases challenging today.
 
 ### "If it ain't broke, don't fix it"
 
-Given COBOL's efficiency in batch processing at scale, many organizations did not want to "rock the boat". Many applications went largely untouched for 30+ years. Multiple developers noted that without investment in refactoring and documentation, the programs evolved into *complex, highly intertwined balls of yarn*. A few quotes from developers summarized this well:
+Given COBOL's efficiency in batch processing at scale and high reliability, many organizations did not want to "rock the boat" and modify something that already was working. Many applications went largely untouched for 30+ years. Multiple developers noted that without investment in refactoring and documentation, the programs evolved into *complex, highly intertwined balls of yarn*. A few quotes from developers summarized this well:
 
 > These programs have been around longer than I have, and after decades of tiny changes -- ten, twenty, thirty, forty years -- they've grown massive. 
 
@@ -73,13 +73,13 @@ When they do need to make changes to COBOL programs, developers find it risky to
 
 It is well documented that the average age of COBOL developers is around 60 years, with estimates of 10% of the workforce retiring each year. Few universities teach COBOL in their computer science curriculum. Both of these forces together creates a shortage of COBOL experts. 
 
-We were lucky to get in touch with younger COBOL programmers, both at one of the universities that still teaches it (Northern Illinois University) and at companies across industries. Here's what we heard:
+We were lucky to get in touch with younger COBOL programmers, both at one of the universities that still teaches it ([Northern Illinois University](https://techchannel.com/education-skills-and-training/niu-mainframe-students/)) and at companies across industries. Here's what we heard:
 
 > The interface and current standard for building, testing, and managing COBOL applications called the "green screen" is highly complex and unintuitive. It is not like modern programming in VS Code. It requires memorizing extensive commands to just get started, and is a major barrier for entering the COBOL space.
 
 > I've seen jokes where people are like, if you want a COBOL program to write "Hello World," it's like 50-70 lines. It's just a lot to get everything set up and onboard into.
 
-What we learned is that understanding the syntax of COBOL is not the hard part, but rather it is getting up to speed on existing COBOL systems without the guidance of the engineers who wrote it to begin with. Maintaining 40+ year old codebases with minimal documentation and limited confidence on the impact of changes can be taxing. And even more taxing when the standard tooling around modern programming languages (e.g., IDEs, debuggers, Git) don't exist with COBOL and mainframe development.
+What we learned is that understanding the syntax of COBOL is not the hard part, but rather it is getting up to speed on existing COBOL systems without the guidance of the engineers who wrote them to begin with. Maintaining 40+ year old codebases with minimal documentation and limited confidence on the impact of changes can be taxing. And even more taxing when the standard tooling around modern programming languages (e.g., IDEs, debuggers, Git) don't exist with COBOL and mainframe development.
 
 ## Whose Code Is It Anyway?
 
