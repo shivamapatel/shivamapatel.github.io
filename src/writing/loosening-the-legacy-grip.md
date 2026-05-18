@@ -126,3 +126,5 @@ In other words, keep your core as is. Push data that is within the core (e.g., g
 ## Conclusion
 
 When I started diving into this topic, I assumed the decision to modernize COBOL core banking systems was a technical one. After many conversations with experts, I think the technical question is the wrong one to start with. What to do about your COBOL core banking system depends on whether or not you own the keys to it. For owners of these systems, AI dramatically lowers the cost of understanding legacy cores, which is what makes modernization so expensive in the first place. For renters of these systems, opportunities to modernize show up in the architecture around the core, such as AI-based fraud monitoring and customer servicing. Banks' modernization options are ultimately shaped by which side of the ownership line they sit on, and by what AI is actually allowed to do for them. 
+
+*Special thanks to my classmates [Ameya Shiva](https://www.linkedin.com/in/ameya-shiva) and [Lisa Zhou](https://www.linkedin.com/in/lisa-zhou-05) for their help, friendship, and invaluable contributions to this research.* 
