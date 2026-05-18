@@ -95,7 +95,7 @@ Control over source code meaningfully impacts how a bank thinks about using AI t
 
 ## Where AI Actually Fits
 
-### I got the ~~power~~~ code 
+### I got the ~~power~~ code 
 
 In February 2026, Anthropic published a blog post: [How AI Helps Break The Cost Barrier To COBOL Modernization](https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization). They make the case that Claude can automate the hardest parts of COBOL modernization: understanding systems with minimal documentation, complex business logic, and dependencies that evolved over decades. *With AI, teams can modernize thier COBOL codebase in quarters instead of years.* 
 
