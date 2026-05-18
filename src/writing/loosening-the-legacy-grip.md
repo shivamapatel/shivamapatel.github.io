@@ -12,7 +12,7 @@ My time at Capital One prior to business school acquainted me with legacy core b
 
 It should be no surprise then that bank executives increasingly view legacy core banking systems as rate-limiters to innovation. Banks spend significant resources to modernize these systems, yet see limited success. Geoff Hudson-Searle (former Citibank executive) estimates that [75% of all COBOL rewrite projects have resulted in failure](https://freedomafterthesharks.com/2016/06/27/exactly-what-is-cobol-and-why-is-cobol-still-a-widely-used-language-in-it/). When they do succeed, they are expensive: Commonwealth Bank of Australia took [5 years and $750M to replace and modernize](https://www.reuters.com/article/technology/banks-scramble-to-fix-old-systems-as-it-cowboys-ride-into-sunset-idUSKBN17C0CN/?utm_source=chatgpt.com) its core banking platform, requiring the help of Accenture and SAP. 
 
-When I got to Stanford, I wanted to better understand why these transformations are so painful, and whether the recent advances in large language models could alleviate some of the pain associated with legacy cores, loosening the legacy grip. The following is a narrative of my approach and learnings over the course of 30+ conversations with COBOL developers, bank IT executives, and systems integrators. 
+When I got to Stanford, I wanted to better understand why these transformations are so painful, and whether the recent advances in large language models could alleviate some of the pain associated with legacy cores, loosening the legacy grip. The following is a narrative gleaned through research and 30+ conversations with COBOL developers, bank IT executives, and systems integrators. 
 
 ## Chesterton's Fence
 
