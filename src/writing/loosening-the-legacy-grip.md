@@ -42,8 +42,10 @@ Fast forward to today, there is an astonishing estimate of 800 billion lines of 
 
 ## Challenges with COBOL Today
 
-![Green Screen](https://hunterstrainingassociates.com/images/ispf6_25.gif)
-<br> *An image of a COBOL program written on the "green screen," a mainframe interface used to write and run COBOL programs*
+<figure>
+<img src="https://hunterstrainingassociates.com/images/ispf6_25.gif" alt="Green Screen">
+<figcaption>An image of a COBOL program written on the "green screen," a mainframe interface used to write and run COBOL programs</figcaption>
+</figure>
 
 ### English, the double-edged sword
 
@@ -81,8 +83,10 @@ What we learned is that understanding the syntax of COBOL is not the hard part, 
 
 ## Whose Code Is It Anyway?
 
-![Core Banking Vendors](https://www.kansascityfed.org/images/Chart1-PSRB24-3.27.24.width-725.png)
-<br> *Sources: American Bankers Association, Chilingerian and Schafer (2020), and Callahan & Associates*
+<figure>
+<img src="https://www.kansascityfed.org/images/Chart1-PSRB24-3.27.24.width-725.png" alt="Core Banking Vendors">
+<figcaption>Sources: American Bankers Association, Chilingerian and Schafer (2020), and Callahan &amp; Associates</figcaption>
+</figure>
 
 Turning our attention back to banks, the core banking system market is highly concentrated as seen in the chart above. The "Big Three" core providers: Fiserv, FIS, and Jack Henry have over 70% market share in banks, according to a 2022 American Bankers Association survey. Each of the Big Three has grown its footprint via M&A over the last three decades and evolved into a "one stop shop" for banks. Beyond core banking, they offer payment processing for merchants, card network services, and more. 
 
