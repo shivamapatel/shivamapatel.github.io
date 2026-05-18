@@ -95,7 +95,7 @@ Control over source code meaningfully impacts how a bank thinks about using AI t
 
 ## Where AI Actually Fits
 
-### I got the ~~power~~ code 
+### I got the ~~power~~ COBOL code 
 
 In February 2026, Anthropic published a blog post: [How AI Helps Break The Cost Barrier To COBOL Modernization](https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization). They make the case that Claude can automate the hardest parts of COBOL modernization: understanding systems with minimal documentation, complex business logic, and dependencies that evolved over decades. *With AI, teams can modernize thier COBOL codebase in quarters instead of years.* 
 
@@ -110,3 +110,5 @@ A systems integrator who worked on a COBOL modernization for a 401(k) program he
 > I modernized 10M lines of code from COBOL into Java. I would literally go in, manually look at the COBOL code, spend a long time trying to translate the business functionality, check with users if it was the right functionality, hand requirements over to a Java developer, and then manually check if the two systems produced similar results. I would do this function by function, until it was over...thank God I no longer do COBOL modernizations.
 
 This was in the late 2010s, pre-LLMs. This systems integrator was quite excited by AI's ability to speed up understanding of COBOL systems and requirements-gathering, and was hopeful that this project done today could be completed much faster than it really took (~7 years). 
+
+### If you don't have the COBOL code...
