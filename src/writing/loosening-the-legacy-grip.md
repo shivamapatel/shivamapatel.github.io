@@ -43,6 +43,7 @@ Fast forward to today, there is an astonishing estimate of 800 billion lines of 
 ## Challenges with COBOL Today
 
 ![Green Screen](https://hunterstrainingassociates.com/images/ispf6_25.gif)
+<br> *An image of a COBOL program written on the "green screen," a mainframe interface used to write and run COBOL programs*
 
 ### English, the double-edged sword
 
