@@ -92,3 +92,21 @@ Another factor compounds a bank's inability to leave: control over source code. 
 The ownership picture is not strictly Big Three vs. everyone else. It is contract by contract. A smaller cohort of banks, typically the largest, have either built their own core in-house or negotiated meaningful source code access with their provider. Another small group has adopted modern core providers such as Thought Machine (founded in 2014, backed by J.P. Morgan Chase), which runs cloud-native and in real-time. But the sheer majority of banks are reliant on the Big Three, renting their COBOL codebases. 
 
 Control over source code meaningfully impacts how a bank thinks about using AI to maintain and modernize its core. 
+
+## Where AI Actually Fits
+
+### I got the ~~power~~~ code 
+
+In February 2026, Anthropic published a blog post: [How AI Helps Break The Cost Barrier To COBOL Modernization](https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization). They make the case that Claude can automate the hardest parts of COBOL modernization: understanding systems with minimal documentation, complex business logic, and dependencies that evolved over decades. *With AI, teams can modernize thier COBOL codebase in quarters instead of years.* 
+
+This is not just hyperbole. Banks that have access to their COBOL source code are seeing meaningful lift from AI. [Morgan Stanley built DevGen.AI](https://www.wsj.com/articles/how-morgan-stanley-tackled-one-of-codings-toughest-problems-4f465959#), which takes legacy COBOL code and turns it into explanatory specs that developers can use to understand what a program does and how it relates to others. As of a year ago, it has reviewed over 9M+ lines of code and saved developers over 280K hours internally. 
+
+This enhanced understanding of COBOL cores is what leads to eventual modernization. One top 10 bank technology reflected to me: 
+
+> If we could feed or train a LLM on our COBOL source code, and it would generate business, technical, and non-functional requirements that a modern core version would need to have, that would be gamechanging. We could then hand off those requirements to developers supercharged with AI and save significant modernization effort.
+
+A systems integrator who worked on a COBOL modernization for a 401(k) program helped prove the point. 
+
+> I modernized 10M lines of code from COBOL into Java. I would literally go in, manually look at the COBOL code, spend a long time trying to translate the business functionality, check with users if it was the right functionality, hand requirements over to a Java developer, and then manually check if the two systems produced similar results. I would do this function by function, until it was over...thank God I no longer do COBOL modernizations.
+
+This was in the late 2010s, pre-LLMs. This systems integrator was quite excited by AI's ability to speed up understanding of COBOL systems and requirements-gathering, and was hopeful that this project done today could be completed much faster than it really took (~7 years). 
