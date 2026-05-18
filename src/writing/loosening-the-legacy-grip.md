@@ -112,3 +112,17 @@ A systems integrator who worked on a COBOL modernization for a 401(k) program he
 This was in the late 2010s, pre-LLMs. This systems integrator was quite excited by AI's ability to speed up understanding of COBOL systems and requirements-gathering, and was hopeful that this project done today could be completed much faster than it really took (~7 years). 
 
 ### If you don't have the COBOL code...
+
+For banks that do not own their core source code, the above does not apply. You can not feed your core into a LLM if your contract says the source code, and any modifications, belong to the vendor. 
+
+One option is to rip out the Big Three and migrate to a modern provider like Thought Machine. As mentioned above, however, this is a massive undertaking with a mixed track record. Commonwealth Bank of Australia, which I cited at the top of this post, spent over $750M and five years getting it done. J.P. Morgan Chase announced Thought Machine would replace its U.S. Retail Banking core in 2021, with no news or development publicly since. Especially given that the Big Three are themselves investing in modernization, the cost-benefit of rip and replace for any bank is hard to justify. 
+
+The more promising path for those 'renting' their COBOL cores is to stop trying to change their cores, and do more *around* it. A CTO at a community bank framed it this way to me: 
+
+> We run on Fiserv Premier. We do zero internal development work on the core and will wait for Fiserv to modernize themselves. They plan to move to the cloud, better integrate with third party fintechs, and modernize their database. In the meantime, what we are focused on is capturing the data that sits within the core in our own data lake, building our own system of record which will allow us to rely on Fiserv less and less. We feed this data into third party applications that are best-in-breed for different purposes, such as Alloy for transaction fraud monitoring. 
+
+In other words, keep your core as is. Push data that is within the core (e.g., general ledger data) into a modern data lake, and integrate with best-of-breed vendors for various workflows: account opening, fraud, underwriting, payments. These vendors are often AI-native by default: for example, Alloy not only uses predictive ML to assign risk scores to transactions, but it also has built an agent to help automate end-to-end fraud investigation workflows. Secondly, by building out an internal data lake and system of record, banks can start experimenting with opportunities for greater customer segmentation, scoring, and personalization across mediums. 
+
+## Conclusion
+
+When I started diving into this topic, I assumed the decision to modernize COBOL core banking systems was a technical one. After many conversations with experts, I think the technical question is the wrong one to start with. What to do about your COBOL core banking system depends on whether or not you own the keys to it. For owners of these systems, AI dramatically lowers the cost of understanding legacy cores, which is what makes modernization so expensive in the first place. For renters of these systems, opportunities to modernize show up in the architecture around the core, such as AI-based fraud monitoring and customer servicing. Banks' modernization options are ultimately shaped by which side of the ownership line they sit on, and by what AI is actually allowed to do for them. 
