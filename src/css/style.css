@@ -247,6 +247,18 @@ body {
   font-style: italic;
 }
 
+.post-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 28px auto;
+  border-radius: 4px;
+}
+
+.post-body p > img {
+  margin: 0 auto;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 56px;
