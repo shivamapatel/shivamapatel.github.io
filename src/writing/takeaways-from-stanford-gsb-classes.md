@@ -4,8 +4,6 @@ date: 2026-03-28
 description: My attempt at consolidating learnings across classes I took during my MBA.
 ---
 
-*Last updated on Saturday, March 28th - end of Quarter 3*
-
 See notes organized by class below: 
 
 ## Formation of New Ventures 
@@ -36,9 +34,18 @@ See notes organized by class below:
 
 - ...
 
+## Corporate Financial Modeling 
 
-You can use **bold** and *italic* text, as well as [links](https://example.com) anywhere in your writing. Headers like the one above create natural section breaks.
+- ... 
 
-> Blockquotes are great for pulling out a key idea or a quote you want to highlight.
+## Building and Managing Sales Organizations
 
-That's about all you need. The rest is just writing.
+- ...
+
+## Negotiations
+
+- ...
+
+## Managing Growing Enterprises
+
+- ...
