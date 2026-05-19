@@ -1,7 +1,7 @@
 ---
 title: Loosening the Legacy Grip in Financial Services
 date: 2026-05-10
-description: Learnings from diving into core banking systems, trying to understand why modernization projects are so painful, and exploring opportunities to alleviate the pain
+description: Learnings from diving into core banking systems, trying to understand why modernization is so painful, and exploring opportunities to alleviate the pain
 ---
 
 ## Introduction
