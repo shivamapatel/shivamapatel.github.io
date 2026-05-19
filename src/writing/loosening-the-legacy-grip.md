@@ -96,25 +96,33 @@ As a result of the breadth and depth of what they offer, core banking systems ar
 
 What we observed is that ownership over source code is typically vendor-agnostic, but rather determined by size of bank. It is contract by contract. A smaller cohort of banks, typically the largest, have either built their own core in-house or negotiated meaningful source code access with their provider. But the sheer majority of banks, including many community banks, are reliant on the Big Three, renting their COBOL codebases. 
 
-Control over source code meaningfully impacts how a bank thinks about using AI to maintain and modernize its core. 
-
 ## Where AI Actually Fits
 
-### I got the ~~power~~ COBOL code 
+Control over source code meaningfully impacts how a bank thinks about using AI to maintain and modernize its core. 
+
+### If you have the ~~power~~ COBOL code...
 
 In February 2026, Anthropic published a blog post: [How AI Helps Break The Cost Barrier To COBOL Modernization](https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization). They make the case that Claude can automate the hardest parts of COBOL modernization: understanding systems with minimal documentation, complex business logic, and dependencies that evolved over decades. *With AI, teams can modernize thier COBOL codebase in quarters instead of years.* 
 
 This is not just hyperbole. Banks that have access to their COBOL source code are seeing meaningful lift from AI. [Morgan Stanley built DevGen.AI](https://www.wsj.com/articles/how-morgan-stanley-tackled-one-of-codings-toughest-problems-4f465959#), which takes legacy COBOL code and turns it into explanatory specs that developers can use to understand what a program does and how it relates to others. As of a year ago, it has reviewed over 9M+ lines of code and saved developers over 280K hours internally. 
 
-This enhanced understanding of COBOL cores is what leads to eventual modernization. One top 10 bank technology reflected to me: 
+This enhanced understanding of COBOL cores is what leads to eventual modernization. One top 10 bank technology executive reflected to me: 
 
-> If we could feed or train a LLM on our COBOL source code, and it would generate business, technical, and non-functional requirements that a modern core version would need to have, that would be gamechanging. We could then hand off those requirements to developers supercharged with AI and save significant modernization effort.
+> If we could feed or train a LLM on our COBOL source code, and it would generate business, technical, and non-functional requirements that a modern core solution would need to have, that would be gamechanging. We could then hand off those requirements to developers supercharged with AI and significantly speed up modernization.
 
-A systems integrator who worked on a COBOL modernization for a 401(k) program helped prove the point. 
+A systems integrator who worked on a COBOL modernization for a 401(k) program before LLMs helped prove the point. 
 
 > I modernized 10M lines of code from COBOL into Java. I would literally go in, manually look at the COBOL code, spend a long time trying to translate the business functionality, check with users if it was the right functionality, hand requirements over to a Java developer, and then manually check if the two systems produced similar results. I would do this function by function, until it was over...thank God I no longer do COBOL modernizations.
 
-This was in the late 2010s, pre-LLMs. This systems integrator was quite excited by AI's ability to speed up understanding of COBOL systems and requirements-gathering, and was hopeful that this project done today could be completed much faster than it really took (~7 years). 
+This systems integrator was quite excited by AI's ability to speed up understanding of COBOL systems and requirements-gathering, and was hopeful that this project done today could be completed much faster than it really took (~7 years). 
+
+It is important to know that while AI can speed up modernization by accelerating understanding of COBOL systems, that does not mean that in every instance you should rewrite the COBOL system in a modern language. A few quotes we heard from COBOL developers and consultants who had been through migration show this: 
+
+> COBOL is actually a very efficient language especially when sorting and merging files in batch jobs. When we ran our Java batch jobs (post modernization) on the mainframe they were around 5x slower than when we ran the same batch jobs in COBOL. 
+
+> Companies who fully modernize often come back to us saying they want to bring the mainframe and COBOL back because of its transaction processing. In fact, we're still helping firms create COBOL training and workshops for their tech teams. 
+
+These quotes illustrate that rewriting COBOL systems in modern languages is case-by-case; what is table stakes, and a no-brainer, is using AI to accelerate the understanding of decades-old COBOL systems especially as the original creators retire and exit the labor force.
 
 ### If you don't have the COBOL code...
 
@@ -124,9 +132,9 @@ One option is to rip out the Big Three and migrate to a modern provider like Tho
 
 The more promising path for those 'renting' their COBOL cores is to stop trying to change their cores, and do more *around* it. A CTO at a community bank framed it this way to me: 
 
-> We run on Fiserv Premier. We do zero internal development work on the core and will wait for Fiserv to modernize themselves. They plan to move to the cloud, better integrate with third party fintechs, and modernize their database. In the meantime, what we are focused on is capturing the data that sits within the core in our own data lake, building our own system of record which will allow us to rely on Fiserv less and less. We feed this data into third party applications that are best-in-breed for different purposes, such as Alloy for transaction fraud monitoring. 
+> We run on Fiserv Premier. We do zero internal development work on the core and will wait for Fiserv to modernize themselves. They plan to move to the cloud, better integrate with third party fintechs, and modernize their database. In the meantime, what we are focused on is **capturing the data that sits within the core in our own data lake**, building our own system of record which will allow us to rely on Fiserv less and less. We feed this data into third party applications that are best-in-breed for different purposes, such as Alloy for transaction fraud monitoring. 
 
-In other words, keep your core as is. Push data that is within the core (e.g., general ledger data) into a modern data lake, and integrate with best-of-breed vendors for various workflows: account opening, fraud, underwriting, payments. These vendors are often AI-native by default: for example, Alloy not only uses predictive ML to assign risk scores to transactions, but it also has built an agent to help automate end-to-end fraud investigation workflows. Secondly, by building out an internal data lake and system of record, banks can start experimenting with opportunities for greater customer segmentation, scoring, and personalization across mediums. 
+In other words, keep your core as is. Push data that is within the core (e.g., general ledger data) into a modern data lake, and integrate with best-of-breed vendors for various workflows: account opening, fraud, underwriting, etc. These vendors are often AI-native by default: for example, Alloy not only uses predictive ML to assign risk scores to transactions, but it also has built an agent to help automate end-to-end fraud investigation workflows. Integrating with these modern third party vendors will only become easier over time as the Big Three invest in connectivity, as seen with [Jack Henry's jXchange program](https://jackhenry.dev/jxchange-soap/overview/). And by building out an internal data lake and system of record, banks are reducing the extent to which their core is a black box that captures critical business data, and can explore opportunities to leverage that data themselves internally.
 
 ## Conclusion
 
