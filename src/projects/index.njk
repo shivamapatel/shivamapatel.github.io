@@ -6,4 +6,19 @@ activeNav: projects
 
 <div class="page-title">Projects</div>
 
-<p class="empty-state">Coming Soon</p>
+{% if projects.length %}
+  <ul class="projects-list">
+    {% for project in projects %}
+      <li class="project-item">
+        <div class="project-title">{{ project.title }}</div>
+        <div class="project-blurb">{{ project.blurb }}</div>
+        <a href="{{ project.url }}" target="_blank" rel="noopener" class="project-link">
+          <span>View project</span>
+          <span class="project-link-icon">↗</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="empty-state">Coming Soon</p>
+{% endif %}

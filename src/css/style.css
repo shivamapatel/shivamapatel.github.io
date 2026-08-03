@@ -172,6 +172,48 @@ body {
   line-height: 1.6;
 }
 
+/* ─── Projects index ─────────────────────────────────── */
+.projects-list {
+  list-style: none;
+}
+
+.project-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.project-blurb {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.project-link:hover {
+  color: var(--accent-hover);
+}
+
+.project-link-icon {
+  font-size: 12px;
+}
+
 .empty-state {
   color: #bbb;
   font-style: italic;
