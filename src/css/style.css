@@ -196,6 +196,11 @@ body {
   white-space: pre-line;
 }
 
+.project-links {
+  display: flex;
+  gap: 20px;
+}
+
 .project-link {
   display: inline-flex;
   align-items: baseline;

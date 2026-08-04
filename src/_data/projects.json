@@ -2,6 +2,7 @@
   {
     "title": "Mile Marker",
     "blurb": "A private, post-run reflection journal that syncs to Strava.",
-    "url": "https://mile-marker-v1.vercel.app"
+    "url": "https://mile-marker-v1.vercel.app",
+    "github": "https://github.com/shivamapatel/mile-marker"
   }
 ]
