@@ -16,7 +16,7 @@ When I got to Stanford, I wanted to better understand why these transformations 
 
 ## Chesterton's Fence
 
-![Chesterton's Fence](https://sproutsschools.com/wp-content/uploads/2023/05/Intro-to-Chesterton.jpeg)
+![Chesterton's Fence](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1jnYCQNIQd4SDJVZqApF9UwUQyq6dxEeUC0uzy7Q9Y4Vs0aHf-QRC0xWH&s=10)
 
 G.K. Chesterton, an English writer during the 20th century, has a quote in one of his short stories that defines where we start: 
 
