@@ -92,6 +92,17 @@ body {
   margin-bottom: 40px;
 }
 
+.page-title:has(+ .page-subtitle) {
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-light);
+  margin-bottom: 40px;
+}
+
 /* ─── Home / Bio ─────────────────────────────────────── */
 .bio p {
   margin-bottom: 18px;
@@ -362,6 +373,86 @@ body {
 
 .favorites-list li:first-child {
   border-top: 1px solid var(--border);
+}
+
+/* ─── Canon ──────────────────────────────────────────── */
+.canon-stream {
+  max-width: 540px;
+}
+
+.canon-item {
+  margin-bottom: 24px;
+}
+
+.canon-quote {
+  padding-left: 20px;
+  border-left: 2px solid var(--border);
+}
+
+.canon-quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: #1a1a1a;
+}
+
+.canon-quote-source {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: 8px;
+  font-style: normal;
+}
+
+.canon-link a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(125, 34, 53, 0.25);
+  transition: border-color 0.15s;
+}
+
+.canon-link a:hover {
+  border-color: var(--accent);
+}
+
+.canon-note {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+.canon-book-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.canon-book-author {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.canon-image img {
+  display: block;
+  max-width: 440px;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  transform: rotate(-1deg);
+}
+
+.canon-image:nth-child(even) img {
+  transform: rotate(1deg);
+}
+
+.canon-caption {
+  font-size: 13px;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 10px;
 }
 
 /* ─── Responsive ─────────────────────────────────────── */

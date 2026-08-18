@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Canon — Shivam Patel
+activeNav: canon
+---
+
+<div class="page-title">Canon</div>
+<p class="page-subtitle">What I'm keeping</p>
+
+{% if canon.length %}
+  <div class="canon-stream">
+    {% for item in canon %}
+      {% if item.type == "quote" %}
+        <div class="canon-item canon-quote">
+          <p class="canon-quote-text">&ldquo;{{ item.text }}&rdquo;</p>
+          {% if item.source %}<p class="canon-quote-source">— {{ item.source }}</p>{% endif %}
+        </div>
+      {% elif item.type == "link" %}
+        <div class="canon-item canon-link">
+          <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+          {% if item.note %}<p class="canon-note">{{ item.note }}</p>{% endif %}
+        </div>
+      {% elif item.type == "book" %}
+        <div class="canon-item canon-book">
+          <p class="canon-book-title">{{ item.title }}{% if item.author %}<span class="canon-book-author"> — {{ item.author }}</span>{% endif %}</p>
+          {% if item.note %}<p class="canon-note">{{ item.note }}</p>{% endif %}
+        </div>
+      {% elif item.type == "image" %}
+        <div class="canon-item canon-image">
+          <img src="{{ item.src }}" alt="{{ item.caption or '' }}" loading="lazy" />
+          {% if item.caption %}<p class="canon-caption">{{ item.caption }}</p>{% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% else %}
+  <p class="empty-state">Coming Soon</p>
+{% endif %}

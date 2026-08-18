@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
   // Copy CSS and CNAME to output
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
+  eleventyConfig.addPassthroughCopy({ "src/images": "images" });
   eleventyConfig.addPassthroughCopy("src/CNAME");
 
   // Date filter for writing posts
