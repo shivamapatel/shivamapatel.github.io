@@ -380,8 +380,21 @@ body {
   max-width: 540px;
 }
 
-.canon-item {
+.canon-item:not(:last-child) {
   margin-bottom: 24px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.canon-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 1px;
+  background: var(--border);
 }
 
 .canon-quote {
